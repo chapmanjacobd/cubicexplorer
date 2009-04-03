@@ -1,0 +1,13 @@
+REM upx -9 ..\Snapshot\CubicExplorer_dev\CubicExplorer.exe
+
+DEL Output\*.* /Q
+"C:\Program Files\7-Zip\7z.exe" a -tzip Output\CubicExplorer_SVN.zip ..\Snapshot\CubicExplorer_dev
+
+"C:\Program Files\NSIS\makensis.exe" CE_InstallerScript-SVN.nsi
+
+ECHO off
+ECHO. 
+ECHO.
+ECHO.
+ECHO === ALL DONE ===
+ECHO.
