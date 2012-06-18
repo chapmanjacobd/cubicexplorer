@@ -125,7 +125,7 @@ begin
   inherited;
   fItems:= TObjectList.Create(true);
   fXML:= TXMLDocument.Create;
-  XML.AppendChild(XML.CreateElement('CubicExplorer'));
+  XML.AppendChild(XML.CreateElement('CubicDeveloper'));
   fStringBooleans:= true;
 end;
 
@@ -237,11 +237,11 @@ begin
         if not assigned(fXML) then
         begin
           fXML:= TXMLDocument.Create;
-          XML.AppendChild(XML.CreateElement('CubicExplorer'));
+          XML.AppendChild(XML.CreateElement('CubicDeveloper'));
         end
         else if not assigned(XML.DocumentElement) then
         begin
-          XML.AppendChild(XML.CreateElement('CubicExplorer'));
+          XML.AppendChild(XML.CreateElement('CubicDeveloper'));
         end
         else
         Result:= false;
@@ -276,11 +276,11 @@ begin
           if not assigned(fXML) then
           begin
             fXML:= TXMLDocument.Create;
-            XML.AppendChild(XML.CreateElement('CubicExplorer'));
+            XML.AppendChild(XML.CreateElement('CubicDeveloper'));
           end
           else if not assigned(XML.DocumentElement) then
           begin
-            XML.AppendChild(XML.CreateElement('CubicExplorer'));
+            XML.AppendChild(XML.CreateElement('CubicDeveloper'));
           end;
         end;
       end;
@@ -571,7 +571,7 @@ var
 begin
   if assigned(XML.DocumentElement) then
   XML.DocumentElement.Free;
-  XML.AppendChild(XML.CreateElement('CubicExplorer'));
+  XML.AppendChild(XML.CreateElement('CubicDeveloper'));
   for i:= 0 to fItems.Count - 1 do
   begin
     item:= TCEAppSettingItem(fItems[i]);

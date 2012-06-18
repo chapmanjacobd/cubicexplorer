@@ -420,7 +420,7 @@ begin
     begin
       if TaskDialog(GetActiveWindow,
                    _('Restart needed!'),
-                   _('Restart CubicExplorer Now?'),
+                   _('Restart CubicDeveloper Now?'),
                    '',
                    TD_ICON_QUESTION,
                    TD_BUTTON_YES+TD_BUTTON_NO) = mrYes then
@@ -1016,11 +1016,11 @@ begin
         if not assigned(fXML) then
         begin
           fXML:= TXMLDocument.Create;
-          fXML.AppendChild(fXML.CreateElement('CubicExplorer'));
+          fXML.AppendChild(fXML.CreateElement('CubicDeveloper'));
         end
         else if not assigned(fXML.DocumentElement) then
         begin
-          fXML.AppendChild(fXML.CreateElement('CubicExplorer'));
+          fXML.AppendChild(fXML.CreateElement('CubicDeveloper'));
         end;
       end;
     finally
@@ -1045,11 +1045,11 @@ begin
   if not assigned(fXML) then
   begin
     fXML:= TXMLDocument.Create;
-    fXML.AppendChild(fXML.CreateElement('CubicExplorer'));
+    fXML.AppendChild(fXML.CreateElement('CubicDeveloper'));
   end
   else if not assigned(fXML.DocumentElement) then
   begin
-    fXML.AppendChild(fXML.CreateElement('CubicExplorer'));
+    fXML.AppendChild(fXML.CreateElement('CubicDeveloper'));
   end;
   // Get/Create Updates node
   updNode:= FindFirstChildDOMNode(fXML.DocumentElement, 'Updates');

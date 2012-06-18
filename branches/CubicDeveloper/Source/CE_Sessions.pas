@@ -438,7 +438,7 @@ begin
   
   try
     if not assigned(XML.DocumentElement) then
-    XML.AppendChild(XML.CreateElement('CubicExplorer'));
+    XML.AppendChild(XML.CreateElement('CubicDeveloper'));
     WriteXML(XML.DocumentElement, FileStream);
   finally
     FileStream.Free;

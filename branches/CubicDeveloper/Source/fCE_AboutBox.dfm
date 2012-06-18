@@ -3,7 +3,7 @@ object CEAboutBox: TCEAboutBox
   Top = 0
   BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
-  Caption = 'About CubicExplorer'
+  Caption = 'About CubicDeveloper'
   ClientHeight = 352
   ClientWidth = 450
   Color = clBtnFace

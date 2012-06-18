@@ -303,7 +303,7 @@ begin
     TntApplication.Title:= fGlobalPathCaption;
   end;
 
-  MainForm.TrayIcon.Hint:= 'CubicExplorer: ' +  fGlobalPathCaption;
+  MainForm.TrayIcon.Hint:= 'CubicDeveloper: ' +  fGlobalPathCaption;
 end;
 
 {##############################################################################}

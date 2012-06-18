@@ -89,7 +89,7 @@ begin
       // Register
       else if action = 'register' then
       begin
-        b:= RegisterDefaultFileManager('cubicexplorer', 'Open in CubicExplorer', WideParamStr(0));
+        b:= RegisterDefaultFileManager('cubicdeveloper', 'Open in CubicDeveloper', WideParamStr(0));
         if index + 1 <= count then
         begin
           param1:= WideParamStr(index + 1);
@@ -106,7 +106,7 @@ begin
       end
       else if action = 'unregister' then
       begin
-        b:= UnRegisterDefaultFileManager('cubicexplorer');
+        b:= UnRegisterDefaultFileManager('cubicdeveloper');
         if index + 1 <= count then
         begin
           param1:= WideParamStr(index + 1);
@@ -207,7 +207,7 @@ begin
   Result:= RunElevatedCommand(AParentHWND, '/admin register ' + IntToStr(CEInput.MsgInput.Handle))
   else
   begin
-    Result:= RegisterDefaultFileManager('cubicexplorer', 'Open in CubicExplorer', WideParamStr(0));
+    Result:= RegisterDefaultFileManager('cubicdeveloper', 'Open in CubicDeveloper', WideParamStr(0));
     if Result then
     PostMessage(CEInput.MsgInput.Handle, WM_AdminResult, 100, 0)
     else
@@ -224,7 +224,7 @@ begin
   Result:= RunElevatedCommand(AParentHWND, '/admin unregister ' + IntToStr(CEInput.MsgInput.Handle))
   else
   begin
-    Result:= UnRegisterDefaultFileManager('cubicexplorer');
+    Result:= UnRegisterDefaultFileManager('cubicdeveloper');
     if Result then
     PostMessage(CEInput.MsgInput.Handle, WM_AdminResult, 101, 0)
     else

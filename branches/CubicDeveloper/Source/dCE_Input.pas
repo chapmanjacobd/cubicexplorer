@@ -52,7 +52,7 @@ var
     hCursor: 0;
     hbrBackground: 0;
     lpszMenuName: nil;
-    lpszClassName: 'CubicExplorer_MsgInput');
+    lpszClassName: 'CubicDeveloper_MsgInput');
 
 type
   TCEInput = class(TDataModule)
