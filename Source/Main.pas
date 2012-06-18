@@ -1478,7 +1478,7 @@ begin
     end
     else
     begin
-      Caption:= 'CubicExplorer';
+      Caption:= 'CubicDeveloper';
       TntApplication.Title:= Caption;
     end;
   end;

@@ -1,7 +1,7 @@
 object MainForm: TMainForm
   Left = 0
   Top = 0
-  Caption = 'CubicExplorer'
+  Caption = 'CubicDeveloper'
   ClientHeight = 441
   ClientWidth = 628
   Color = clBtnFace

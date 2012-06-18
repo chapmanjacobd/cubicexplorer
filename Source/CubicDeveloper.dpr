@@ -19,7 +19,7 @@
 //                                                                                            
 //******************************************************************************
 
-program CubicExplorer;
+program CubicDeveloper;
 
 {%File 'Muokkaukset.txt'}
 
@@ -27,8 +27,6 @@ program CubicExplorer;
 uses
   FastMM4,
   ControlResizeBugFix,
-  madExcept,
-  madLinkDisAsm,
   Forms,
   Controls,
   Messages,
@@ -170,7 +168,7 @@ begin
 
   //////////////////////////////////////////////////////
   //***** Check if only Single instance is allowed *****
-  h:= FindWindow('CubicExplorer_MsgInput','CE_MsgInput');
+  h:= FindWindow('CubicDeveloper_MsgInput','CE_MsgInput');
   if h <> 0 then
   begin
     if SendMessage(h, WM_USER + 1,0,0) = 0 then
@@ -206,7 +204,7 @@ begin
   ReportMemoryLeaksOnShutdown:= DebugHook <> 0;
 
   Application.Initialize;
-  Application.Title := 'CubicExplorer';
+  Application.Title := 'CubicDeveloper';
   Application.ShowMainForm:= false;
 
   // Create Main Form

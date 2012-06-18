@@ -292,7 +292,7 @@ begin
       if not WideDirectoryExists(path) then
       WideForceDirectories(path);
       // Default data
-      list.Add('# Translation for CubicExplorer');
+      list.Add('# Translation for CubicDeveloper');
       list.Add('#');
       list.Add('msgid ""');
       list.Add('msgstr ""');
